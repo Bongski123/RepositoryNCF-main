@@ -1,0 +1,15 @@
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    
+  }
+  
+  /* Additional styles for the input and button */
+  input[type="text"],
+  button {
+    margin: 5px; /* Add some spacing between elements */
+  }
+  

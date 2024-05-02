@@ -1,0 +1,44 @@
+/* usersTable.css */
+
+/* Style the table */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Style the table header */
+  .users-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style the table rows */
+  .users-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the table rows on hover */
+  .users-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style the table data cells */
+  .users-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .users-table button:hover {
+    background-color: #cc0000;
+  }
+  .users-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

@@ -1,0 +1,36 @@
+.upload-container {
+    background-color: #ffffff;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+   margin: auto;
+   height: auto;
+
+  }
+  
+  .title-bar {
+    text-align: center;
+  }
+  
+  .title1 {
+    color: #333;
+  }
+  
+  .up-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+  }
+  
+  .upload-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .upload-btn {
+    margin-top: 20px;
+  }
+  
+  /* Add more CSS styling as needed */
+  

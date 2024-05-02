@@ -1,0 +1,59 @@
+.researches-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .researches-table th,
+  .researches-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .researches-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .researches-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .researches-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .researches-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .researches-table button:hover {
+    background-color: #cc0000;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    flex: 1; /* Take remaining space */
+    padding: 8px 32px 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .search-icon {
+    margin-left: -30px; /* Adjust margin to move icon closer to input */
+    color: #666;
+    cursor: pointer;
+  }
+  
+  

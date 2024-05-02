@@ -1,0 +1,49 @@
+/* Add this CSS in a separate CSS file or style block */
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  /* Research list styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li { 
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+  }
+  

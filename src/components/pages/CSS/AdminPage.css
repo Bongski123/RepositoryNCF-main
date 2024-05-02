@@ -1,0 +1,90 @@
+.admin-page-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.open {
+    width: 80px;
+  }
+  
+  .sidebar-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center buttons horizontally */
+    padding: 10px 4;
+  }
+  
+  .sidebar-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    width: 30%;
+  }
+
+  /* AdminPage.css */
+
+/* Add pointer cursor to menu items */
+.menu-item {
+    cursor: pointer;
+  }
+  
+  
+  .blue {
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+    margin-left: 909px;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .green {
+    color: white;
+    background-color: green;
+    padding-left: 20px;
+    margin-left: 150px;
+    padding: 50px;
+  }
+  
+  .red {
+    color: white;
+    background-color: red;
+        padding-left: 20px;
+    margin-left: 150px;
+    padding: 50px;
+  }
+  
