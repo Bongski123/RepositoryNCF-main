@@ -87,4 +87,102 @@
     margin-left: 150px;
     padding: 50px;
   }
+  .total-researches-button {
+    display: inline-block;
+    padding: 20px; /* Increase padding to make button bigger */
+    background-color: red; /* Change background color to red */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 15vh;
+  }
+  
+  .total-researches-button:hover {
+    background-color: darkred; /* Darken the background color on hover */
+  }
+  
+
+  .total-authors-button {
+    display: inline-block;
+    padding: 20px; /* Increase padding to make button bigger */
+    background-color: rgb(47, 0, 255); /* Change background color to red */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 15vh;
+  }
+  
+  .total-authors-button:hover {
+    background-color: rgb(7, 21, 83); /* Darken the background color on hover */
+  }
+
+  .total-number {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  
+  .total-pending-button {
+    display: inline-block;
+    padding: 20px; /* Increase padding to make button bigger */
+    background-color: rgb(10, 61, 21); /* Change background color to red */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 15vh;
+  }
+  
+  .total-pending-button:hover {
+    background-color: rgb(0, 114, 28); /* Darken the background color on hover */
+  }
+
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-header {
+    padding: 10px;
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .menu-item.active {
+    background-color: #444;
+  }
+  
+  .menu-item:hover {
+    background-color: #444;
+  }
+  
+  .menu-item span {
+    margin-left: 10px;
+  }
   

@@ -81,6 +81,8 @@ export const RegisterUser = ({ headers, onCreateUser }) => {
             }
         }
     };
+
+    
     
     return (
         <div className="form_wrapper">

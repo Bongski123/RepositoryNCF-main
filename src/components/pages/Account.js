@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useAuth } from "../../auth/AuthWrapper";
-import '../pages/CSS/Account.css'
+import '../pages/CSS/Account.css';
+
 export const Account = () => {
   const { user } = useAuth();
   const [userResearches, setUserResearches] = useState([]);
@@ -13,10 +14,15 @@ export const Account = () => {
       try {
         // Retrieve email from user data
         const userEmail = user.name;
-        // Fetch user-specific researches based on user email
-        const response = await axios.get(`http://127.0.0.1:9001/author/${userEmail}`);
-        console.log("Response:", response.data);
-        setUserResearches(response.data);
+
+        // Fetch user-specific uploaded researches
+        const uploadedResponse = await axios.get(`http://127.0.0.1:9001/author/${userEmail}`);
+        // Fetch user-specific pending researches
+        const pendingResponse = await axios.get(`http://127.0.0.1:9001/author/${userEmail}/pending`);
+
+        // Combine uploaded and pending researches into a single array
+        const combinedResearches = [...uploadedResponse.data, ...pendingResponse.data];
+        setUserResearches(combinedResearches);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching user's researches:", error);
@@ -39,15 +45,14 @@ export const Account = () => {
         <p>{error}</p>
       ) : (
         <div className="table-container">
-          <h3>Your Uploaded Researches</h3>
+          <h3>Your Researches</h3>
           <table className="table">
             <thead>
               <tr>
                 <th>Title</th>
                 <th>Published</th>
-                <th>category</th>
+                <th>Category</th>
                 <th>Department</th>
-                
                 <th>Status</th>
                 <th>Cite</th>
                 <th>Download</th>
@@ -55,13 +60,13 @@ export const Account = () => {
             </thead>
             <tbody>
               {userResearches.map((research) => (
-                <tr key={research.user_id}>
+                <tr key={research.id}>
                   <td>{research.research_title}</td>
                   <td>{research.publish_date}</td>
                   <td>{research.category_name}</td>
                   <td>{research.department_name}</td>
                   <td>{research.status}</td>
-
+                  {/* Add appropriate action buttons */}
                 </tr>
               ))}
             </tbody>
